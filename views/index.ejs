@@ -6,23 +6,29 @@
     <title>Experimenting</title>
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/piece.css">
-    <script src="main.js" defer></script>
+    <script src="./js/pieceViewer.js" defer></script>
 </head>
 <body>
     <% pieces.map((piece, entityIndex) => { %>
         <div class ="entityContainer">
-            <article class="pieceContainer" id="container <%= entityIndex %>">
+            <article class="pieceContainer" id="container-<%= entityIndex %>">
                     <div class="pieceName">
                         <%= piece.name %>
                     </div>
-                    <div class="pieceBody" id="rook" id="container <%= entityIndex %>">
+                    <div class="pieceBody" id="pieceBodyContainer-<%= entityIndex %>">
                         <% piece.body.map((row, rowIndex) => { %>
-                            <div class="pieceRow" id="container <%= rowIndex %>"><pre><%= row %></pre></div>
+                            <div class="pieceRow" id="pieceRow<%= rowIndex %>"><pre><%= row %></pre></div>
                         <% }); %>
                     </div>
             </article>
+            <div class="pieceModifiers">
+                <div class= "animationSelectorContainer">
+                    <select name="animationName" id="animationSelector-<%= entityIndex %>"></select>
+                </div>
+            </div>
         </div>
+
     <% }); %>
-    
 </body>
 </html>
+
