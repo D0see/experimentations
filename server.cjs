@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const port = 3000;  // You can change this port if you need
 
-const pieceService = require('./pieceService.cjs');
+const pieceService = require('./services/pieceService.cjs');
 
 //middleware
 app.use(express.static(path.join(__dirname, 'public')));
