@@ -1,8 +1,16 @@
 body {
     padding-top: 50px;
+    padding-bottom: 50px;
     margin: 0 auto;
     width: 80%;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+}
+
+.entityContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    margin: 0 auto;
 }

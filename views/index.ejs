@@ -9,17 +9,19 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <% pieces.map((piece) => { %>
-        <article class="pieceContainer">
-                <div class="pieceName">
-                    <%= piece.name %>
-                </div>
-                <div class="pieceBody" id="rook">
-                    <% piece.body.map((row) => { %>
-                        <div class="pieceRow"><pre><%= row %></pre></div>
-                    <% }); %>
-                </div>
-        </article>
+    <% pieces.map((piece, entityIndex) => { %>
+        <div class ="entityContainer">
+            <article class="pieceContainer" id="container <%= entityIndex %>">
+                    <div class="pieceName">
+                        <%= piece.name %>
+                    </div>
+                    <div class="pieceBody" id="rook" id="container <%= entityIndex %>">
+                        <% piece.body.map((row, rowIndex) => { %>
+                            <div class="pieceRow" id="container <%= rowIndex %>"><pre><%= row %></pre></div>
+                        <% }); %>
+                    </div>
+            </article>
+        </div>
     <% }); %>
     
 </body>
