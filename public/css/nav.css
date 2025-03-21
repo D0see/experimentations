@@ -1,21 +1,44 @@
+.navContainer {
+    width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 5px;
 }
 
 nav a {
     all: unset;
+    text-wrap: nowrap;
     border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 5px;
     cursor: pointer;
+    transition: border-color 0.15s ease-in;
+}
+
+nav pre {
+    all: unset;
+    text-wrap: nowrap;
+    border: 1px solid black;
+    color: white;
+    padding: 2px;
+    font-size: larger;
 }
 
 nav a:hover {
     box-sizing: content-box;
     border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
