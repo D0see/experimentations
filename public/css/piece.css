@@ -1,7 +1,6 @@
 .entityContainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     margin: 0 auto;
 }
 
@@ -11,11 +10,12 @@
     margin : 0 auto;
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
     margin: 0 auto;
     color : white;
     background-color: black;
     justify-content: space-between;
+    border: 1px solid white;
 }
 
 .pieceName {
@@ -45,7 +45,7 @@
 }
 
 .noAnimation {
-    
+
 }
 
 .breathing {
@@ -65,8 +65,23 @@
 }
 
 .pieceModifiers {
-    max-width: 175px;
+    max-width: 100%;
     display: flex;
     margin: 0 auto;
+}
+
+.animationSelector {
+    border: 1px solid white;
+    border-top : none;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+option {
+    text-align: center;
+    cursor: pointer;
 }
 

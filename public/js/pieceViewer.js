@@ -1,6 +1,7 @@
 const animations = [
-    "noAnimation",
-    "breathing"
+    "breathing",
+    "noAnimation"
+
 ]
 
 const pieceBodies = [...document.getElementsByClassName('pieceBody')]
