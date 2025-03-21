@@ -1,6 +1,7 @@
 const animations = [
-    "breathing",
-    "noAnimation"
+    "noAnimation",
+    "breathing"
+
 
 ]
 

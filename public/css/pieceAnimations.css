@@ -1,0 +1,19 @@
+.noAnimation {
+
+}
+
+.breathing {
+    animation: breathe 2s cubic-bezier(.47,.09,.91,.6) infinite;
+}
+
+@keyframes breathe {
+    0% {
+        letter-spacing: 0px;
+    }
+    50% {
+        letter-spacing: 0.7px;
+    }
+    100% {
+        letter-spacing: 0px;
+    }
+}

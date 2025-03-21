@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+}
+
+nav a {
+    all: unset;
+    border: 1px solid black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    box-sizing: content-box;
+    border: 1px solid white;
+}

@@ -6,7 +6,7 @@
             </div>
             <div class="pieceBody" id="pieceBodyContainer-<%= entityIndex %>">
                 <% piece.body.map((row, rowIndex) => { %>
-                    <div class="pieceRow breathing" id="pieceRow<%= rowIndex %>">
+                    <div class="pieceRow noAnimation" id="piece<%= entityIndex%>Row<%= rowIndex %>">
                         <pre><%= row %></pre>
                     </div>
                 <% }); %>

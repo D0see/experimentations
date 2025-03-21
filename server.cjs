@@ -16,6 +16,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 // A simple route
 app.get('/', (req, res) => {
+  res.redirect('/piecesViewer');
+});
+
+app.get('/piecesViewer', (req, res) => {
   res.render('index', {pieces : pieceService.getAllPieces()});
 });
 

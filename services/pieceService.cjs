@@ -7,7 +7,6 @@ const pieceService = {
         const files = fs.readdirSync(path.join(__dirname, '../pieces'));
         for (const file of files) {
             const pieceLines = fs.readFileSync(path.join(__dirname, '../pieces/' + file), "utf-8").split("\r\n");
-            console.log(pieceLines);
             pieces.push({
                 "name" : pieceLines[0],
                 "body" : pieceLines.slice(1)
