@@ -6,15 +6,13 @@
             </div>
             <div class="pieceBody" id="pieceBodyContainer-<%= entityIndex %>">
                 <% piece.body.map((row, rowIndex) => { %>
-                    <div class="pieceRow" id="pieceRow<%= rowIndex %>">
+                    <div class="pieceRow noAnimation" id="pieceRow<%= rowIndex %>">
                         <pre><%= row %></pre>
                     </div>
                 <% }); %>
             </div>
     </article>
     <div class="pieceModifiers">
-        <div class= "animationSelectorContainer">
-            <select name="animationName" id="animationSelector-<%= entityIndex %>"></select>
-        </div>
+        <select class= "animationSelector" id="animationSelector-<%= entityIndex %>"></select>
     </div>
 </div>
